@@ -15,7 +15,7 @@ export default function Beginners() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <Card isBlurred className="w-full h-full">
+    <Card isBlurred className="w-full h-full lg:size-fit lg:col-start-1 lg:row-start-1">
       <CardHeader className="text-3xl h-fit w-full">
         <Image
           alt="card background"
@@ -24,7 +24,7 @@ export default function Beginners() {
         />
         
       </CardHeader>
-      <CardBody className="">
+      <CardBody className="flex items-center">
       <h1 className="text-2xl text-center font-bold p-2">English for Beginners</h1>
         <p className=" text-center font-medium">
           Our English for Beginners course is designed for individuals who are
@@ -41,7 +41,7 @@ export default function Beginners() {
           color="primary"
           variant="ghost"
           onPress={onOpen}
-          className="m-2"
+          className="m-2 lg:w-1/2"
         >
           Online Learning Options
         </Button>

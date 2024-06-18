@@ -1,13 +1,20 @@
 import { Button } from "@nextui-org/button";
 import emailjs from "@emailjs/browser";
-import { FormEvent, useRef } from "react";
+import {
+  DetailedHTMLProps,
+  FormEvent,
+  HTMLAttributes,
+  LegacyRef,
+  ReactNode,
+  useRef,
+} from "react";
 import { Input, Textarea } from "@nextui-org/input";
 import { User, Mail, MessageSquare } from "lucide-react";
 import { Avatar } from "@nextui-org/react";
 
-const id = process.env.VITE_serviceId as string;
-const template = process.env.VITE_templateId as string;
-const key = process.env.VITE_publicKey as string;
+const id = process.env.serviceId as string;
+const template = process.env.templateId as string;
+const key = process.env.publicKey as string;
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -32,14 +39,13 @@ export default function Contact() {
 
   return (
     <>
-      <div
-       className="w-full h-[1200px] p-5 flex flex-col lg:flex-row items-center bg-gradient-to-r from-[rgb(16,46,62)] to-[rgb(48,115,154)]">
-        <section className="h-full w-full p-2">
+      <div className="w-full sm:h-[1200px] md:h-[900px] p-5 flex flex-col lg:flex-row items-center bg-gradient-to-r from-[rgb(16,46,62)] to-[rgb(48,115,154)]">
+        <section className="h-full w-full lg:flex lg:flex-col lg:justify-center">
           <h2 className="text-4xl my-5 text-center text-white font-bold">
             Book a free consultation
           </h2>
           <form
-            className="h-4/5 w-full flex flex-col items-center"
+            className="w-full h-[400px] lg:h-2/3 p-2 flex flex-col items-center"
             onSubmit={sendEmail}
             ref={form}
           >
@@ -78,7 +84,7 @@ export default function Contact() {
               />
 
               <Button
-              size="lg"
+                size="lg"
                 type="submit"
                 variant="shadow"
                 className="w-1/4 text-white bg-[rgb(78,101,122)]"
@@ -88,18 +94,23 @@ export default function Contact() {
             </div>
           </form>
         </section>
-        <section className="h-full w-full">
-        <h2 className="text-4xl my-5 text-center text-white font-bold">
+        <section className="h-full w-full lg:flex lg:flex-col lg:justify-center">
+          <h2 className="text-4xl my-5 text-center text-white font-bold">
             Meet the teachers
           </h2>
-          <div
-            className="h-4/5 w-full flex flex-col items-center"
-          >
+          <div className="h-2/3 w-full flex flex-col items-center">
             <div className="w-96 md:w-3/4 p-2 h-full flex flex-col justify-evenly items-center bg-white rounded-xl">
-            <h3 className="font-bold text-2xl">Daniel Higareda Leon</h3>
-            <Avatar className="w-20 h-20" />
-            <h4 className="font-bold text-lg">Instructor / CEO</h4>
-            <p className="bg-slate-300 p-5 text-center font-medium rounded-xl">Daniel Higareda Leon is the energetic founder of Lingo Academy. With a passion for making learning fun and effective, he specializes in Business English and Communications. Daniel loves helping students achieve their language goals. When not teaching, you can find him watching F1, eating delicious food, or going for walks.</p>
+              <h3 className="font-bold text-2xl">Daniel Higareda Leon</h3>
+              <Avatar className="w-20 h-20" />
+              <h4 className="font-bold text-lg">Instructor / CEO</h4>
+              <p className="bg-slate-300 p-5 text-center font-medium rounded-xl">
+                Daniel Higareda Leon is the energetic founder of Lingo Academy.
+                With a passion for making learning fun and effective, he
+                specializes in Business English and Communications. Daniel loves
+                helping students achieve their language goals. When not
+                teaching, you can find him watching F1, eating delicious food,
+                or going for walks.
+              </p>
             </div>
           </div>
         </section>

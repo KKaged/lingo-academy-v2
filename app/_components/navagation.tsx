@@ -21,8 +21,9 @@ export default function Navagation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+    <nav className="">
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="w-full fixed md:static bg-[rgb(221,206,184)]">
-      <NavbarContent className="sm:hidden pr-1" justify="center">
+      <NavbarContent className="lg:hidden pr-1" justify="center">
         <NavbarBrand>
           <Image src={logo} alt="icon" className="w-10 h-10" />
           <h1 className="text-xl font-bold ml-2">
@@ -31,12 +32,12 @@ export default function Navagation() {
           </h1>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="sm:hidden" justify="end">
+      <NavbarContent className="lg:hidden" justify="end">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarBrand>
           <Image src={logo} alt="icon" className="w-10 h-10" />
           <h1 className="text-xl font-bold">
@@ -313,5 +314,6 @@ export default function Navagation() {
         </Dropdown>
       </NavbarMenu>
     </Navbar>
+    </nav>
   );
 }

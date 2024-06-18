@@ -24,17 +24,19 @@ export default function Home() {
       </header>
 
       <main className="w-dvh overflow-hidden">
-        <section className="bg-[rgb(221,206,184)]">
-          <p className="text-center font-bold p-5 text-2xl">
+        <section className="bg-[rgb(221,206,184)] lg:flex lg:flex-col ">
+          <p className="text-center text-lg font-bold p-5 m-2 lg:text-4xl">
             Our language center offers group and personal lessons in English
           </p>
-          <Beginners />
-          <Online />
-          <Business />
-          <Kids />
+          <div className="lg:grid lg:grid-col-2 lg:grid-row-2 lg:gap-5 lg:size-11/12 lg:mx-auto lg:p-5">
+            <Beginners />
+            <Online />
+            <Business />
+            <Kids />
+          </div>
         </section>
       </main>
-      <section className="w-dvh overflow-hidden">
+      <section id="bookings" className="w-dvh overflow-hidden">
         <Contact />
       </section>
       <footer className="w-dvh overflow-hidden">

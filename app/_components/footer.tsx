@@ -1,16 +1,13 @@
 import logo from "@/public/logo.svg";
 import Image from "next/image";
-import logo2 from "@/public/logo2.png"
+import logo2 from "@/public/logo2.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-full border">
-      <div className="flex flex-col md:justify-evenly">
-        <section className="flex items-center justify-center p-5 w-full md:w-1/2">
-          <Image
-            src={logo2}
-            alt="logo"
-          />
+    <footer className="w-full h-full">
+      <div className="flex flex-col md:justify-evenly lg:flex-row">
+        <section className="flex items-center justify-center p-5 w-full">
+          <Image src={logo2} alt="logo" />
           <h1 className="text-3xl ml-2 md:text-4xl font-bold text-center">
             <span className="text-[rgb(78,101,122)] font-bold">Lingo</span>
             Academy
@@ -45,7 +42,7 @@ export default function Footer() {
         </section>
       </div>
       <section className="h-[60px] text-center font-medium bg-[rgb(221,206,184)]">
-        <h2 className="text-xl p-2">© 2024 LingoAcademy </h2>
+        <h2 className="text-xl p-2 size-full my-auto">© 2024 LingoAcademy </h2>
       </section>
     </footer>
   );

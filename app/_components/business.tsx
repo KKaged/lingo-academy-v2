@@ -15,17 +15,22 @@ export default function Business() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <Card isBlurred className="w-full h-2/3">
+    <Card
+      isBlurred
+      className="w-full h-full lg:size-fit lg:col-start-1 lg:row-start-2"
+    >
       <CardHeader className="text-3xl h-fit flex flex-col">
         <Image
           alt="card background"
           src={business}
           className="w-full rounded-xl "
         />
-        
       </CardHeader>
-      <CardBody className="p-5">
-      <h1 className="text-2xl text-center p-2 font-bold"> English for Business</h1>
+      <CardBody className="p-5 flex items-center">
+        <h1 className="text-2xl text-center p-2 font-bold">
+          {" "}
+          English for Business
+        </h1>
         <p className="text-center font-medium">
           Elevate your professional communication skills with our English for
           Business course. Tailored for business professionals, this course
@@ -40,7 +45,7 @@ export default function Business() {
           color="primary"
           variant="ghost"
           onPress={onOpen}
-          className="m-2 mt-5"
+          className="m-2 mt-5 lg:w-1/2"
         >
           Online Learning Options
         </Button>

@@ -14,11 +14,14 @@ import Image from "next/image";
 export default function Kids() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
-    <Card isBlurred className="w-full h-2/3">
+    <Card
+      isBlurred
+      className="w-full h-full lg:size-fit lg:col-start-2 lg:row-start-2 lg:col-end-3 lg:row-end-3"
+    >
       <CardHeader className="w-full h-full">
         <Image alt="card background" src={kid} className="w-full rounded-xl " />
       </CardHeader>
-      <CardBody className="p-5">
+      <CardBody className="p-5 flex items-center">
         <h1 className="text-2xl text-center p-2 font-bold">
           {" "}
           English for Kids
@@ -38,7 +41,7 @@ export default function Kids() {
           color="primary"
           variant="ghost"
           onPress={onOpen}
-          className="m-2 mt-5"
+          className="m-2 mt-5 lg:w-1/2"
         >
           Online Learning Options
         </Button>
