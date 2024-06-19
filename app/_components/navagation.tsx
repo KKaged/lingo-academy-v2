@@ -1,3 +1,4 @@
+"use client"
 import {
   Navbar,
   NavbarBrand,
@@ -50,6 +51,7 @@ export default function Navagation() {
           <NavbarItem>
             <DropdownTrigger>
               <Button
+              id="online"
                 radius="sm"
                 disableRipple
                 variant="light"
@@ -97,6 +99,7 @@ export default function Navagation() {
           <NavbarItem>
             <DropdownTrigger>
               <Button
+              id="mhSchool"
                 radius="sm"
                 disableRipple
                 variant="light"
@@ -132,6 +135,7 @@ export default function Navagation() {
           <NavbarItem>
             <DropdownTrigger>
               <Button
+              id="adults"
                 radius="sm"
                 disableRipple
                 variant="light"
@@ -167,6 +171,7 @@ export default function Navagation() {
           <NavbarItem>
             <DropdownTrigger>
               <Button
+              id="corporate"
                 radius="sm"
                 disableRipple
                 variant="light"
