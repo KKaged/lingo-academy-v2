@@ -203,7 +203,7 @@ export default function Navagation() {
         <Dropdown>
           <NavbarMenuItem>
             <DropdownTrigger>
-              <Button radius="sm" variant="light">
+              <Button radius="sm" variant="light" endContent={(<ChevronDown fill="currentColor" size={16}/>)}>
                 Online
               </Button>
             </DropdownTrigger>
@@ -244,7 +244,7 @@ export default function Navagation() {
         <Dropdown>
           <NavbarMenuItem>
             <DropdownTrigger>
-              <Button radius="lg" variant="light">
+              <Button radius="lg" variant="light" endContent={(<ChevronDown fill="currentColor" size={16}/>)}>
                 Middle & High School Students
               </Button>
             </DropdownTrigger>
@@ -273,7 +273,7 @@ export default function Navagation() {
         <Dropdown>
           <NavbarMenuItem>
             <DropdownTrigger>
-              <Button radius="lg" variant="light">
+              <Button radius="lg" variant="light" endContent={(<ChevronDown fill="currentColor" size={16}/>)}>
                 Adults & University Students
               </Button>
             </DropdownTrigger>
@@ -302,7 +302,7 @@ export default function Navagation() {
         <Dropdown>
           <NavbarMenuItem>
           <DropdownTrigger>
-              <Button radius="lg" variant="light">
+              <Button radius="lg" variant="light" endContent={(<ChevronDown fill="currentColor" size={16}/>)}>
                 Corporate Institutions
               </Button>
             </DropdownTrigger>
