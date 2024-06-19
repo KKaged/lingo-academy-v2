@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
+import { ChevronDown } from "lucide-react";
 
 export default function Navagation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function Navagation() {
                 radius="sm"
                 disableRipple
                 variant="light"
+                endContent={(<ChevronDown fill="currentColor" size={16}/>)}
                 className="p-0 bg-transparent data-[hover=true]:bg-transparent"
               >
                 <span>Online</span>
@@ -98,6 +100,7 @@ export default function Navagation() {
                 radius="sm"
                 disableRipple
                 variant="light"
+                endContent={(<ChevronDown fill="currentColor" size={16}/>)}
                 className="p-0 bg-transparent data-[hover=true]:bg-transparent"
               >
                 <span>Middle & High School Students</span>
@@ -132,6 +135,7 @@ export default function Navagation() {
                 radius="sm"
                 disableRipple
                 variant="light"
+                endContent={(<ChevronDown fill="currentColor" size={16}/>)}
                 className="p-0 bg-transparent data-[hover=true]:bg-transparent"
               >
                 <span>Adults & University Students</span>
@@ -166,6 +170,7 @@ export default function Navagation() {
                 radius="sm"
                 disableRipple
                 variant="light"
+                endContent={(<ChevronDown fill="currentColor" size={16}/>)}
                 className="p-0 bg-transparent data-[hover=true]:bg-transparent"
               >
                 <span>Corporate Institution</span>
