@@ -17,7 +17,7 @@ export default function Business() {
   return (
     <Card
       isBlurred
-      className="w-full h-full lg:size-fit lg:col-start-1 lg:row-start-2"
+      className="w-full h-full  lg:size-full lg:col-start-1 lg:row-start-2"
     >
       <CardHeader className="text-3xl h-fit flex flex-col">
         <Image

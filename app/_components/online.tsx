@@ -6,7 +6,7 @@ export default function online() {
   return (
     <Card
       isBlurred
-      className="w-full h-full lg:size-fit lg:col-start-2 lg:row-start-1"
+      className="w-full h-full lg:size-full lg:col-start-2 lg:row-start-1"
     >
       <CardHeader className="text-3xl h-fit flex flex-col">
         <Image
