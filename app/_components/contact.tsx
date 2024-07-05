@@ -12,9 +12,9 @@ import { Input, Textarea } from "@nextui-org/input";
 import { User, Mail, MessageSquare } from "lucide-react";
 import { Avatar } from "@nextui-org/react";
 
-const id = process.env.serviceId as string;
-const template = process.env.templateId as string;
-const key = process.env.publicKey as string;
+const id = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+const template = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+const key = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
