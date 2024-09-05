@@ -2,7 +2,7 @@
 
 //components imported
 import Navagation from "./_components/navagation";
-
+import logo from "../public/logo.svg";
 import hero from "@/public/hero.webp";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
@@ -19,7 +19,13 @@ export default function Home() {
   return (
     <>
       <header className="w-dvh overflow-hidden">
-        <Navagation />
+        <div className="bg-[rgb(221,206,184)] flex items-center p-3 pl-4">
+          <Image src={logo} alt="icon" className="w-10 h-10" />
+          <h1 className="text-xl font-bold ml-2">
+            <span className="text-[rgb(78,101,122)] font-bold">Lingo</span>
+            Academy
+          </h1>
+        </div>
         <Hero />
       </header>
 
