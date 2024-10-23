@@ -3,13 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 @layer base {
   body {
-      @apply font-noto
-    }
-  }  
-  
+    @apply font-noto
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

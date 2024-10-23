@@ -13,7 +13,13 @@ export default function Hero() {
           Academy
         </h1>
         <h2 className="text-center font-bold text-lg lg:text-4xl m-3">
-          The nexus to improve your English skills
+          An innovative space where{" "}
+          <span className="text-[rgb(78,101,122)]">YOU</span> can enhance your{" "}
+          <span className="text-[rgb(78,101,122)] underline underline-offset-4">
+            English
+          </span>{" "}
+          skills and unlock new opportunities for personal and professional
+          growth.
         </h2>
       </div>
       <div className="flex flex-col justify-evenly h-1/3 items-center p-2 w-full lg:flex-row lg:justify-around lg:h-1/6">
@@ -28,12 +34,14 @@ export default function Hero() {
       </div>
       <div className="flex justify-center w-full h-1/3 items-center">
         <Button
-          className="text-lg font-medium"
+          className="text-lg font-medium hover:animate-pulse"
           color="success"
           variant="shadow"
           size="lg"
         >
-          <Link href="#bookings" scroll={true}>Book a free consultation</Link>
+          <Link href="#bookings" scroll={true}>
+            Book a free consultation
+          </Link>
         </Button>
       </div>
     </section>

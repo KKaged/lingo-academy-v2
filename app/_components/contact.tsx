@@ -9,7 +9,7 @@ import {
   useRef,
 } from "react";
 import { Input, Textarea } from "@nextui-org/input";
-import { User, Mail, MessageSquare } from "lucide-react";
+import { User, Mail, MessageSquare, Phone } from "lucide-react";
 import { Avatar } from "@nextui-org/react";
 
 const id = process.env.NEXT_PUBLIC_SERVICE_ID as string;
@@ -73,6 +73,19 @@ export default function Contact() {
                   className="2xl:w-[40%] w-full"
                 />
               </div>
+
+              {/* New Phone Number Input with Phone Icon */}
+              <Input
+                variant="underlined"
+                isRequired
+                type="tel" // Use 'tel' for phone input
+                placeholder="Phone Number"
+                name="phone" // Add name attribute for form submission
+                startContent={<Phone color="rgb(78,101,122)" />} // Phone icon added here
+                style={{ border: "none" }}
+                className="2xl:w-[90%] w-full" // Adjust width as needed
+              />
+
               <Textarea
                 variant="underlined"
                 isRequired
