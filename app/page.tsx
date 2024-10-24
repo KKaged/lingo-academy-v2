@@ -26,7 +26,7 @@ export default function Home() {
       <main className="w-dvh overflow-hidden">
         <section className="bg-[rgb(221,206,184)] lg:flex lg:flex-col ">
           <p className="text-center text-lg font-bold p-5 m-2 lg:text-4xl">
-            Our language center offers group and personal lessons in English
+            英語のグループレッスンと個人レッスンを提供しています
           </p>
           <div className="lg:grid lg:grid-col-2 lg:grid-row-2 lg:gap-5 lg:size-11/12 lg:mx-auto lg:p-5">
             <Beginners />

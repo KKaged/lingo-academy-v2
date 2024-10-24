@@ -13,19 +13,17 @@ export default function Hero() {
           Academy
         </h1>
         <h2 className="text-center font-bold text-lg lg:text-4xl m-3">
-          An innovative space where{" "}
-          <span className="text-[rgb(78,101,122)]">YOU</span> can enhance your{" "}
+          <span className="text-[rgb(78,101,122)]">英語力</span>を磨き、
           <span className="text-[rgb(78,101,122)] underline underline-offset-4">
-            English
-          </span>{" "}
-          skills and unlock new opportunities for personal and professional
-          growth.
+            未来の可能性
+          </span>
+          広げる場所
         </h2>
       </div>
       <div className="flex flex-col justify-evenly h-1/3 items-center p-2 w-full lg:flex-row lg:justify-around lg:h-1/6">
         <aside className="flex items-center">
           <MapPin size={"25px"} className="mr-1" />
-          <span className="font-medium lg:text-3xl">Yokohama, Japan</span>
+          <span className="font-medium lg:text-3xl">日本、横浜</span>
         </aside>
         <aside className="flex items-center">
           <Phone size={"25px"} className="mr-1" />
@@ -34,13 +32,13 @@ export default function Hero() {
       </div>
       <div className="flex justify-center w-full h-1/3 items-center">
         <Button
-          className="text-lg font-medium hover:animate-pulse"
+          className="text-lg font-medium hover:animate-pulse hover:animate-bounce"
           color="success"
           variant="shadow"
           size="lg"
         >
-          <Link href="#bookings" scroll={true}>
-            Book a free consultation
+          <Link href="#bookings" className="text-white" scroll={true}>
+            無料相談を予約する
           </Link>
         </Button>
       </div>

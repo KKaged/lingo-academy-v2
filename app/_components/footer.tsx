@@ -15,28 +15,24 @@ export default function Footer() {
         </section>
         <section className="flex flex-col text-center md:w-full md:p-1">
           <h3 className="text-3xl font-bold p-5 my-1 text-[rgb(78,101,122)]">
-            POPULAR COURSES
+            人気コース
           </h3>
           <ul className="flex flex-col items-center p-5">
             <li className="flex justify-between w-full p-2 font-semibold">
-              <span>English for Kids</span>
-              <span className="text-slate-500">¥3,000 per hour</span>
+              <span>キッズ向け英語</span>
+              <span className="text-slate-500">1時間 ¥3,000</span>
             </li>
             <li className="flex justify-between w-full p-2 font-semibold">
-              <span>Online Learning</span>
-              <span className="text-slate-500">¥3,000 per hour</span>
+              <span>英語初</span>
+              <span className="text-slate-500">1時間 ¥3,000</span>
             </li>
             <li className="flex justify-between w-full p-2 font-semibold">
-              <span>Personal Lessons</span>
-              <span className="text-slate-500">¥3,000 per hour</span>
+              <span>オンライン学習</span>
+              <span className="text-slate-500">1時間 ¥3,000</span>
             </li>
             <li className="flex justify-between w-full p-2 font-semibold">
-              <span>Group Lessons</span>
-              <span className="text-slate-500">¥4,000 per hour</span>
-            </li>
-            <li className="flex justify-between w-full p-2 font-semibold">
-              <span>English Club</span>
-              <span className="text-slate-500">¥4,000 per hour</span>
+              <span>ビジネス英語</span>
+              <span className="text-slate-500">1時間 ¥3,000</span>
             </li>
           </ul>
         </section>

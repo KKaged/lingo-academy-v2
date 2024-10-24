@@ -8,35 +8,19 @@ export default function AboutUs() {
       <div className="p-6 sm:p-10 bg-[rgb(202,217,226)] min-h-screen flex items-center justify-center">
         <div className="bg-white shadow-lg rounded-lg p-6 sm:p-10 max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-[rgb(78,101,122)] mb-6">
-            About Us
+            私たちについて
           </h1>
           <p className="text-base sm:text-xl mb-4 leading-relaxed">
-            What began as a simple hobby to teach conversational English has
-            evolved into a passion for empowering English learners in Japan.
-            Through my experiences, I realized how challenging it can be to
-            encounter and effectively learn English here, which motivated me to
-            create a space where learning is easier, practical, and enjoyable.
+            もともとは英会話を教えるシンプルな趣味として始まりましたが、日本の英語学習者を支援する情熱へと進化しました。経験を通じて、日本で英語に触れ、効果的に学ぶことの難しさを感じ、その学習をより簡単で実用的かつ楽しいものにするための場所を作ろうと決意しました。
           </p>
           <p className="text-base sm:text-xl mb-4 leading-relaxed">
-            Our mission is to bridge this gap by making English learning more
-            accessible, focusing on real-world conversational skills. We aim to
-            help you build the confidence to speak English naturally and
-            fluently in everyday situations, whether it’s for travel, work, or
-            social settings.
+            私たちのミッションは、英語学習をより身近にし、実際の会話スキルに重点を置くことで、このギャップを埋めることです。旅行、仕事、または社交の場で、自然に流暢に英語を話す自信をつけるお手伝いをしたいと考えています。
           </p>
           <p className="text-base sm:text-xl mb-4 leading-relaxed">
-            Over time, we’ve come to understand that language learning is not
-            just about memorizing vocabulary or practicing grammar—it’s about
-            creating an environment where learners feel comfortable to practice,
-            make mistakes, and grow. We’ve developed a range of resources,
-            lessons, and interactive activities that cater to various learning
-            styles, all aimed at making English a part of your daily life.
+            言語学習は単なる語彙の暗記や文法の練習ではなく、学習者が安心して練習し、失敗し、成長できる環境を作ることだと、私たちは時間をかけて理解しました。さまざまな学習スタイルに対応した教材、レッスン、インタラクティブなアクティビティを開発し、英語を日常生活の一部にすることを目指しています。
           </p>
           <p className="text-base sm:text-xl leading-relaxed">
-            By providing a supportive and engaging learning experience, we hope
-            to inspire more people to embrace English with confidence and ease.
-            No matter your current level, our goal is to help you achieve
-            meaningful progress and enjoy the process along the way.
+            支援的で魅力的な学習体験を提供することで、より多くの人が自信を持って英語に取り組めるようにインスピレーションを与えたいと考えています。現在のレベルに関係なく、私たちの目標は、意味のある進歩を遂げるお手伝いをし、その過程を楽しんでいただけるようにすることです。
           </p>
         </div>
       </div>

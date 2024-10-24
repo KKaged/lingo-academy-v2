@@ -16,20 +16,13 @@ export default function online() {
         />
       </CardHeader>
       <CardBody className="p-5">
-        <h1 className="text-2xl text-center p-2 font-bold"> Online Learning</h1>
+        <h1 className="text-2xl text-center p-2 font-bold">オンライン英会話</h1>
         <p className="text-center font-medium">
-          Our Online Learning platform brings the classroom to you, no matter
-          where you are in the world. We offer a range of courses to suit all
-          levels and needs, from beginners to advanced learners, business
-          professionals to young children. Our virtual classrooms are equipped
-          with cutting-edge technology that facilitates interactive learning.
-          Engage with live lessons, participate in group activities, and receive
-          real-time feedback from our expert instructors. Learn English on your
-          own terms, with flexible schedules that fit your lifestyle.
+          いつでもどこでも、世界中のどこからでも、教室があなたのもとへ。初心者から上級者、ビジネスパーソンから幼い子供まで、あらゆるレベルとニーズに合わせた幅広いコースをご用意しています。私たちのバーチャルクラスルームは、インタラクティブな学習を促進する最先端のテクノロジーで装備されています。ライブレッスンに参加し、グループ活動に参加し、専門講師からリアルタイムのフィードバックを受け取ることができます。自分のペースで英語を学び、ライフスタイルに合った柔軟なスケジュールで学習できます。
         </p>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">¥3,000 per hour</span>
+        <span className="text-2xl text-slate-500">時給3,000円</span>
       </CardFooter>
     </Card>
   );

@@ -22,20 +22,9 @@ export default function Kids() {
         <Image alt="card background" src={kid} className="w-full rounded-xl " />
       </CardHeader>
       <CardBody className="p-5 flex items-center">
-        <h1 className="text-2xl text-center p-2 font-bold">
-          {" "}
-          English for Kids
-        </h1>
+        <h1 className="text-2xl text-center p-2 font-bold">キッズ向け英語</h1>
         <p className="text-center font-medium">
-          Our English for Kids program is specially designed to make learning
-          English fun and engaging for young learners. Through games, songs,
-          stories, and interactive activities, children will develop their
-          language skills in a nurturing and supportive environment. Our
-          experienced instructors are experts in early childhood education and
-          understand how to motivate and inspire children to learn. The
-          curriculum is designed to improve vocabulary, pronunciation, grammar,
-          and conversational skills, laying a solid foundation for future
-          learning.
+          当社のキッズ向け英語プログラムは、若い学習者にとって楽しく魅力的な英語学習を特別に設計されています。ゲーム、歌、物語、インタラクティブなアクティビティを通じて、子供たちは愛情深くサポート的な環境で言語スキルを伸ばします。当社の経験豊富な講師は、幼児教育の専門家であり、子供たちを動機づけ、学習にインスピレーションを与える方法を理解しています。カリキュラムは、語彙、発音、文法、会話スキルを向上させ、将来の学習のためのしっかりとした基盤を築くように設計されています。
         </p>
         <Button
           color="primary"
@@ -43,29 +32,23 @@ export default function Kids() {
           onPress={onOpen}
           className="m-2 mt-5 lg:w-1/2"
         >
-          Online Learning Options
+          オンライン学習オプション
         </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
                 <ModalHeader>
-                  <h1>English for Kids Online</h1>
+                  <h1>オンラインキッズ英語</h1>
                 </ModalHeader>
                 <ModalBody>
                   <p className="text-justify">
-                    Our online classes for kids offer the same engaging and
-                    interactive experience as our in-person sessions. Using a
-                    kid-friendly virtual platform, children can participate in
-                    fun activities, games, and lessons that make learning
-                    English enjoyable. Parents can easily monitor progress and
-                    participate in their child&apos;s learning journey from
-                    home.
+                    当社のオンラインキッズクラスは、対面セッションと同じくらい楽しくインタラクティブな体験を提供します。子供向けの仮想プラットフォームを使用することで、子供たちは楽しく英語を学ぶことができるアクティビティ、ゲーム、レッスンに参加することができます。保護者は、自宅から簡単に進捗状況を監視し、お子様の学習の旅に参加することができます。
                   </p>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" variant="light" onPress={onClose}>
-                    Close
+                    閉じる
                   </Button>
                 </ModalFooter>
               </>
@@ -74,7 +57,7 @@ export default function Kids() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">¥3,000 per hour</span>
+        <span className="text-2xl text-slate-500">時給3,000円</span>
       </CardFooter>
     </Card>
   );

@@ -8,34 +8,30 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@nextui-org/modal";
-import Image from "next/image"
+import Image from "next/image";
 import beginner from "@/public/learning-beginners.webp";
 
 export default function Beginners() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <Card isBlurred className="w-full h-full lg:size-fit lg:col-start-1 lg:row-start-1">
+    <Card
+      isBlurred
+      className="w-full h-full lg:size-fit lg:col-start-1 lg:row-start-1"
+    >
       <CardHeader className="text-3xl h-fit w-full">
         <Image
           alt="card background"
           src={beginner}
           className="w-full rounded-xl"
         />
-        
       </CardHeader>
       <CardBody className="flex items-center">
-      <h1 className="text-2xl text-center font-bold p-2">English for Beginners</h1>
+        <h1 className="text-2xl text-center font-bold p-2">
+          英語初心者必見！海外旅行に役立つ英語を学ぼう
+        </h1>
         <p className=" text-center font-medium">
-          Our English for Beginners course is designed for individuals who are
-          just starting their journey in learning the English language. Whether
-          you&apos;re a complete novice or have a basic understanding of English,
-          this course will help you build a strong foundation in reading,
-          writing, speaking, and listening. Our experienced instructors use
-          interactive and engaging methods to ensure that learning English is
-          both fun and effective. With a focus on practical vocabulary and
-          everyday conversation, you&apos;ll quickly gain the confidence to use
-          English in real-life situations.
+          英語を学び始めたばかりの方でも、このコースで自信を持って英語を話せるようになります。経験豊富な講師が、楽しく効果的な方法で、読み書き、話す、聞くのスキルを磨きます。日常会話や実用的な語彙に重点を置き、旅先でのコミュニケーションに役立つ英語を身に付けましょう。英語を話す楽しさを体験して、海外旅行をより充実させましょう！
         </p>
         <Button
           color="primary"
@@ -43,28 +39,23 @@ export default function Beginners() {
           onPress={onOpen}
           className="m-2 lg:w-1/2"
         >
-          Online Learning Options
+          オンライン学習オプション
         </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
                 <ModalHeader>
-                  <h1>English for Beginners Online</h1>
+                  <h1>初心者向けオンライン英語</h1>
                 </ModalHeader>
                 <ModalBody>
                   <p className="text-justify">
-                    Prefer learning from the comfort of your home? Our online
-                    lessons provide the same high-quality instruction as our
-                    in-person classes. With flexible scheduling and interactive
-                    virtual classrooms, you can participate in lessons, practice
-                    speaking with peers, and receive personalized feedback from
-                    your instructor, all from your own home.
+                    自宅で快適に英語を学びませんか？当校のオンラインレッスンは、対面レッスンと同じ高品質な指導を提供します。柔軟なスケジュールとインタラクティブなバーチャルクラスルームで、レッスンに参加し、仲間と会話の練習をし、講師から個別のフィードバックを受けられます。すべてご自宅から可能です。
                   </p>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" variant="light" onPress={onClose}>
-                    Close
+                    閉じる
                   </Button>
                 </ModalFooter>
               </>
@@ -73,7 +64,7 @@ export default function Beginners() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">¥3,000 per hour</span>
+        <span className="text-2xl text-slate-500">時給3,000円</span>
       </CardFooter>
     </Card>
   );

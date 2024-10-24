@@ -27,19 +27,9 @@ export default function Business() {
         />
       </CardHeader>
       <CardBody className="p-5 flex items-center">
-        <h1 className="text-2xl text-center p-2 font-bold">
-          {" "}
-          English for Business
-        </h1>
+        <h1 className="text-2xl text-center p-2 font-bold">ビジネス英語</h1>
         <p className="text-center font-medium">
-          Elevate your professional communication skills with our English for
-          Business course. Tailored for business professionals, this course
-          focuses on the specific language and communication skills needed in
-          the corporate world. Learn how to conduct meetings, deliver
-          presentations, negotiate deals, write professional emails, and more.
-          Our instructors bring real-world business experience to the classroom,
-          ensuring that you gain practical and relevant skills to advance your
-          career.
+          弊社のビジネス英語コースで、プロフェッショナルなコミュニケーションスキルを向上させましょう。ビジネスプロフェッショナルのために設計されたこのコースは、企業の世界で必要な特定の言語とコミュニケーションスキルに焦点を当てています。会議の進行、プレゼンテーションの実施、取引の交渉、プロフェッショナルなメールの作成など、さまざまなスキルを学びます。当社の講師は、実務経験を教室に持ち込み、キャリアアップに必要な実践的で関連性の高いスキルを習得できるようサポートします。
         </p>
         <Button
           color="primary"
@@ -47,28 +37,23 @@ export default function Business() {
           onPress={onOpen}
           className="m-2 mt-5 lg:w-1/2"
         >
-          Online Learning Options
+          オンライン学習オプション
         </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
                 <ModalHeader>
-                  <h1>English for Business Online</h1>
+                  <h1>オンラインビジネス英語</h1>
                 </ModalHeader>
                 <ModalBody>
                   <p className="text-justify">
-                    Busy schedule? No problem. Our online Business English
-                    lessons allow you to enhance your skills without
-                    compromising your work commitments. Join live sessions,
-                    access business-focused materials, and practice with
-                    professionals from around the globe. Our flexible online
-                    platform makes it easy to fit learning into your busy life.
+                    忙しいスケジュールでも大丈夫！当社のオンラインビジネス英語レッスンは、仕事に支障を与えることなくスキルを向上させることができます。ライブセッションに参加し、ビジネスに特化した教材にアクセスし、世界中のプロフェッショナルと練習しましょう。柔軟なオンラインプラットフォームにより、忙しい生活に学習をフィットさせることが簡単になります。
                   </p>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" variant="light" onPress={onClose}>
-                    Close
+                    閉じる
                   </Button>
                 </ModalFooter>
               </>
@@ -77,7 +62,7 @@ export default function Business() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">¥4,000 per hour</span>
+        <span className="text-2xl text-slate-500">時給4,000円</span>
       </CardFooter>
     </Card>
   );
