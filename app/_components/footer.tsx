@@ -32,7 +32,7 @@ export default function Footer() {
             </li>
             <li className="flex justify-between w-full p-2 font-semibold">
               <span>ビジネス英語</span>
-              <span className="text-slate-500">1時間 ¥3,000</span>
+              <span className="text-slate-500">1時間 ¥4,000</span>
             </li>
           </ul>
         </section>
