@@ -64,7 +64,7 @@ export default function Beginners() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">時給3,000円</span>
+        <span className="text-2xl text-slate-500"> ¥3,000/１コマ</span>
       </CardFooter>
     </Card>
   );

@@ -20,16 +20,7 @@ export default function Hero() {
           広げる場所
         </h2>
       </div>
-      <div className="flex flex-col justify-evenly h-1/3 items-center p-2 w-full lg:flex-row lg:justify-around lg:h-1/6">
-        <aside className="flex items-center">
-          <MapPin size={"25px"} className="mr-1" />
-          <span className="font-medium lg:text-3xl">日本、横浜</span>
-        </aside>
-        <aside className="flex items-center">
-          <Phone size={"25px"} className="mr-1" />
-          <span className="font-medium lg:text-3xl">+80-70-2668-6559</span>
-        </aside>
-      </div>
+
       <div className="flex justify-center w-full h-1/3 items-center">
         <Button
           className="text-lg font-medium hover:animate-pulse hover:animate-bounce"

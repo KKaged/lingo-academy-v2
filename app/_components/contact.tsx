@@ -117,11 +117,10 @@ export default function Contact() {
               <Avatar className="w-20 h-20" />
               <h4 className="font-bold text-lg">インストラクター / CEO</h4>
               <p className="bg-slate-300 p-5 text-center font-medium  rounded-xl">
-                ダニエル・ヒガレダ・レオンは、Lingo
-                Academyのエネルギッシュな創設者です。
+                初めまして、Lingo Academyの創設者です。
                 学習を楽しく効果的にすることに情熱を注ぎ、ビジネス英語とコミュニケーションを専門としています。
-                ダニエルは、学生が語学の目標を達成する手助けをすることが大好きです。
-                教えていないときは、F1観戦やおいしい食事を楽しんだり、散歩に出かけたりしています。
+                私は学生が語学の目標を達成する手助けをすることが大好きです。
+                趣味は、F1観戦・美味しい食べ物巡り、散歩です。
               </p>
             </div>
           </div>

@@ -43,7 +43,7 @@ export default function Kids() {
                 </ModalHeader>
                 <ModalBody>
                   <p className="text-justify">
-                    当社のオンラインキッズクラスは、対面セッションと同じくらい楽しくインタラクティブな体験を提供します。子供向けの仮想プラットフォームを使用することで、子供たちは楽しく英語を学ぶことができるアクティビティ、ゲーム、レッスンに参加することができます。保護者は、自宅から簡単に進捗状況を監視し、お子様の学習の旅に参加することができます。
+                    当社のキッズ向け英語プログラムは、若い学習者にとって楽しく魅力的な英語学習を特別に設計されています。ゲーム、歌、物語、インタラクティブなアクティビティを通じて、子供たちは愛情深くサポート的な環境で言語スキルを伸ばします。カリキュラムは、語彙、発音、文法、会話スキルを向上させ、将来の学習のためのしっかりとした基盤を築くように設計されています。
                   </p>
                 </ModalBody>
                 <ModalFooter>
@@ -57,7 +57,7 @@ export default function Kids() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">時給3,000円</span>
+        <span className="text-2xl text-slate-500">¥3,000/１コマ</span>
       </CardFooter>
     </Card>
   );

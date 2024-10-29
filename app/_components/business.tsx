@@ -48,7 +48,7 @@ export default function Business() {
                 </ModalHeader>
                 <ModalBody>
                   <p className="text-justify">
-                    忙しいスケジュールでも大丈夫！当社のオンラインビジネス英語レッスンは、仕事に支障を与えることなくスキルを向上させることができます。ライブセッションに参加し、ビジネスに特化した教材にアクセスし、世界中のプロフェッショナルと練習しましょう。柔軟なオンラインプラットフォームにより、忙しい生活に学習をフィットさせることが簡単になります。
+                    弊社のビジネス英語コースで、プロフェッショナルなコミュニケーションスキルを向上させましょう。ビジネスプロフェッショナルのために設計されたこのコースは、企業の世界で必要な特定の言語とコミュニケーションスキルに焦点を当てています。会議の進行、プレゼンテーションの実施、取引の交渉、プロフェッショナルなメールの作成など、さまざまなスキルを学びます。キャリアアップに必要な実践的で関連性の高いスキルを習得できるようサポートします。
                   </p>
                 </ModalBody>
                 <ModalFooter>
@@ -62,7 +62,7 @@ export default function Business() {
         </Modal>
       </CardBody>
       <CardFooter>
-        <span className="text-2xl text-slate-500">時給4,000円</span>
+        <span className="text-2xl text-slate-500">¥4,000/１コマ</span>
       </CardFooter>
     </Card>
   );
