@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import hero from "@/public/hero.webp";
-import { MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
