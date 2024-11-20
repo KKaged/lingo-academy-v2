@@ -11,6 +11,8 @@ import {
 import { Input, Textarea } from "@nextui-org/input";
 import { User, Mail, MessageSquare, Phone } from "lucide-react";
 import { Avatar } from "@nextui-org/react";
+import danielImage from "../public/IMG_2141.jpg";
+import Image from "next/image";
 
 const id = process.env.NEXT_PUBLIC_SERVICE_ID as string;
 const template = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
@@ -114,9 +116,15 @@ export default function Contact() {
           <div className="h-2/3 w-full flex flex-col items-center">
             <div className="w-96 md:w-3/4 p-2 h-full flex flex-col justify-evenly items-center bg-white rounded-xl">
               <h3 className="font-bold text-2xl">ダニエル・ヒガレダ・レオン</h3>
-              <Avatar className="w-20 h-20" />
+              <Image
+                src="/IMG_2141.jpg"
+                width={170} // Set desired width
+                height={170} // Set desired height
+                alt="Daniel Higareda Leon"
+                className="rounded-full"
+              />
               <h4 className="font-bold text-lg">インストラクター / CEO</h4>
-              <p className="bg-slate-300 p-5 text-center font-medium  rounded-xl">
+              <p className="bg-slate-300 p-5 text-center font-medium rounded-xl">
                 初めまして、Lingo Academyの創設者です。
                 学習を楽しく効果的にすることに情熱を注ぎ、ビジネス英語とコミュニケーションを専門としています。
                 私は学生が語学の目標を達成する手助けをすることが大好きです。
